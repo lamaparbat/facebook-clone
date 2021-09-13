@@ -1,0 +1,7 @@
+.Newsfeed{
+   height: 100%;
+   overflow-y: scroll;
+}
+.Newsfeed::-webkit-scrollbar{
+   display: none;
+}

@@ -1,0 +1,32 @@
+.loginContain{
+  height: 100vh;;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.loginContain div img{
+   height: 100px;
+   width: 100px;
+}
+
+/* login component */
+.loginContainer{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.login{
+  width: fit-content; 
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+}
+.login span{ 
+   position: relative;
+   top: 15px;
+}
+.login input{
+   margin-top: 20px;
+}
+.login .email, .login .password{
+   width: 300px;
+}

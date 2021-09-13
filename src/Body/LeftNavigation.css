@@ -1,0 +1,75 @@
+.leftNavigation ul{
+   list-style-type: none;
+}
+.leftNavigation ul li{
+   padding: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.leftNavigation ul li:hover{
+   background-color: rgb(228, 228, 228);
+}
+#avatar{
+   height: 35px;
+   width:35px;
+}
+#friendIcon{
+   font-size: 35px;
+   color: rgb(51, 116, 236);
+}
+#groupIcon{
+   font-size: 35px;
+   color: rgb(51, 116, 236);
+}
+#marketIcon{
+   font-size: 35px;
+   color: rgb(51, 116, 236);
+}
+#liveIcon{
+   font-size: 32px;
+   color: rgb(51, 116, 236);
+}
+#memoryIcon{
+   margin-left: -5px;
+   font-size: 38px;
+   color: rgb(51, 116, 236);
+}
+#saveIcon{
+   font-size: 35px;
+   color: rgb(51, 116, 236);
+}
+#sharpIcon{
+   padding-top:2px;
+   font-size: 33px;
+   background-color: whitesmoke;
+   border-radius: 50px;
+}
+#shortCutsTitle{
+   margin-top: -15px;
+   cursor: unset;
+}
+#shortCutsTitle:hover{
+   background-color:rgb(240, 240, 240);
+}
+#threeDot:hover{
+   cursor: pointer;
+   opacity: 0.8; 
+}
+#ronbLogo{
+   height: 35px;
+   width: 35px;
+}
+.policies{
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 12px;
+  width: 300px; 
+  text-align: left;
+  word-spacing:5px;
+  color: rgb(32, 32, 32);
+}
+@media(max-width:1100px){
+  .leftNavigation{
+    display: none;
+   }
+}

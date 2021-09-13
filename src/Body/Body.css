@@ -1,0 +1,11 @@
+.body{
+   height: 92.4vh;
+   background-color:rgb(240, 240, 240);
+   justify-content:space-between;
+}
+@media(max-width:1100px){
+.body{
+   height: 100vh;
+   justify-content: center;
+}
+}

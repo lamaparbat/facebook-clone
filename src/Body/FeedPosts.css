@@ -1,0 +1,70 @@
+.posts{
+  margin-left: 10px;
+  width: 600px;
+  height: 600px;
+}
+.posts .card{
+  border-radius: 10px;
+}
+.posts .card .postHeader #profileImg{
+  cursor: pointer;
+}
+.posts .card .postHeader #profileImg:hover{
+  opacity:0.8;
+}
+.posts .card .postHeader #profileName{
+  cursor: pointer;
+}
+.posts .card .postHeader .col1 #globe{
+  top: -5px;
+  font-size: 15px;
+  position: relative;
+}
+.posts .card .postHeader .col1 #time{
+  top: -5px;
+  font-size: 13px;
+  position: relative;
+}
+.posts .card .postHeader .col2 .threeDotIcon{
+   margin-top: 13px;
+   cursor: pointer;
+}
+.posts .card .postHeader .col2 .threeDotIcon:hover{
+  opacity: 0.6;
+}
+.posts .card .postFooter #divider{
+  margin-top: 5px;
+}
+.posts .card .postFooter .PostFooterReviews div{
+   cursor:pointer;
+   border-radius:5px;
+}
+.posts .card .postFooter .PostFooterReviews div:hover{
+background-color: whitesmoke;
+
+}
+.posts .card .postFooter #commentIcon{
+   margin-top: 3px;
+   font-size: 22px;
+}
+.posts .card .postFooter #shareIcon{
+   margin-top: -3px;
+   font-size: 28px;
+   position: relative;
+}
+.posts .card .postFooter #PostFooterComments{
+  margin-top: -20px;
+}
+.posts .card .postFooter #PostFooterComments #commentInput{
+  font-size: 16px;
+  border-radius: 50px;
+  border: 0px solid white;
+}
+@media(max-width:600px){
+  .posts{
+    margin-left: 0px;
+    padding-left: 5px;
+    padding-right: 15px;
+    width: 100%;
+  }
+}

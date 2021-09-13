@@ -1,0 +1,62 @@
+.statusbar{
+  margin:10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.statusbar .formContainer input{
+  padding-left: 20px;
+  border-radius: 20px;
+  transition: 1s;
+}
+.statusbar .media div{
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+}
+.statusbar .media div:hover{
+  background-color: whitesmoke;
+}
+.statusbar .media div span{
+  color: rgb(44, 44, 44);
+}
+
+#mediaIcon{
+  border-radius: 5px;
+  border:0.5px solid #848484;
+}
+#mediaIcon #photoLibrary{
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+#mediaIcon #photoLibrary:hover{
+  background-color: rgb(199, 199, 199);
+}
+#mediaIcon #videoLibrary{
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+#mediaIcon #videoLibrary:hover{
+  background-color: rgb(199, 199, 199);
+}
+#mediaIcon #mediaText{
+  top: 8px;
+  left: 10px;
+  position: relative;
+}
+@media(max-width:600px){
+   .statusbar .formContainer input{
+      font-size: 12px;
+   }
+  .statusbar .media div span{
+   font-size: 13px;
+   }
+   .statusbar .media div{
+      flex-direction: column;
+      align-items: center;
+    }
+   .statusbar{
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+}

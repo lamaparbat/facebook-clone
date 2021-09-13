@@ -1,0 +1,46 @@
+.rightNavigation .eventCard{
+   border-radius: 5px;
+   box-shadow: 0px 1px 11px -3px rgba(133,133,133,0.75);
+   -webkit-box-shadow: 0px 1px 11px -3px rgba(133,133,133,0.75);
+   -moz-box-shadow: 0px 1px 11px -3px rgba(133,133,133,0.75);
+}
+.rightNavigation .eventCard div .cancelEvent{
+  cursor: pointer;
+}
+.rightNavigation .eventCard div .cancelEvent:hover{
+   opacity: 0.7;
+}
+.rightNavigation .eventCard span:hover{
+   background-color: whitesmoke;
+   cursor: pointer;
+}
+.rightNavigation .activeUser .header div .videoIcon:hover{
+   cursor: pointer;
+   opacity: 0.7;
+}
+.rightNavigation .activeUser .header div .searchIcon:hover{
+   cursor: pointer;
+   opacity: 0.7;
+}
+.rightNavigation .activeUser .header div .threeDotIcon:hover{
+   cursor: pointer;
+   opacity: 0.7;
+}
+.onlineUser{
+  border-radius: 10px;
+}
+.onlineUser div .profilePic{
+   height: 35px;
+   width: 35px;
+}
+.onlineUser  .dot{
+   margin-top: 10px;
+   margin-right: 5px;
+   height: 15px;
+   width: 15px;
+}
+@media (max-width:1100px) {
+  .rightNavigation{
+    display: none;
+   }
+}

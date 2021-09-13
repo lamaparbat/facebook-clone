@@ -1,0 +1,175 @@
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-shadow: 0px 4px 8px -1px rgba(197,197,197,0.75);
+   -webkit-box-shadow: 0px 4px 8px -1px rgba(197,197,197,0.75);
+   -moz-box-shadow: 0px 4px 8px -1px rgba(197,197,197,0.75);
+}
+.navbar .col1 input{
+   padding-left: 40px;
+   margin-top: 10px;
+   margin-left: 5px;
+   height: 40px;
+   width:250px;
+   color: rgb(88, 88, 88);
+   border:none;
+   border-radius: 100px/100px;
+}
+.navbar .col1 div{
+   margin-top: -5px;
+}
+.navbar .col1 div .searchIcon{
+  margin-left: 20px;
+  top: 19px;
+  font-size: 22px;
+  color: rgb(97, 97, 97);
+  position:absolute;
+}
+.navbar .col2{
+   display: flex;
+}
+.navbar .col2 div{
+   width: 105px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.navbar .col2 div:hover{
+   border: none;
+   background-color: whitesmoke;
+}
+.navbar .col2 div .homeIcon{
+  font-size: 33px;
+  color: rgb(61, 61, 61);
+}
+.navbar .col2 div .liveIcon{
+  margin-top: -5px;
+  font-size: 30px;
+  color: rgb(61, 61, 61);
+}
+.navbar .col2 div .storeIcon{
+  margin-top: 2px;
+  font-size: 30px;
+  color: rgb(61, 61, 61);
+}
+.navbar .col2 div .friendsIcon{
+  font-size: 33px;
+  color: rgb(61, 61, 61);
+}
+.navbar .col3 .profile{
+   padding: 4px;
+   display: flex;
+   border-radius: 50px;
+   cursor: pointer;
+}
+.navbar .col3 .profile:hover{
+   background-color: whitesmoke;
+}
+.navbar .col3 .profile #img{
+  height: 32px;
+  width: 32px;
+}
+.navbar .col3 .appIconCont{
+   height: 40px;
+   width: 42px;
+   display: grid;
+   place-items: center;
+   padding: 5px;
+   background-color: rgb(231, 231, 231);
+   cursor: pointer;
+}
+.navbar .col3 .appIconCont:hover{
+   opacity: 0.8;
+}
+.navbar .col3 .appIconCont #appIcon{
+  font-size: 24px;
+  margin-top: -2px;
+  font-weight: bolder;
+}
+.navbar .col3 .messengerIconCont{
+   height: 40px;
+   width: 42px;
+   display: grid;
+   place-items: center;
+   padding: 5px;
+   text-align: center;
+   background-color: rgb(231, 231, 231);
+   cursor: pointer;
+}
+.navbar .col3 .messengerIconCont:hover{
+   opacity: 0.8;
+}
+.navbar .col3 .messengerIconCont #messengerIcon{
+   font-size: 20px;
+}
+.navbar .col3 .notifIconCont{
+   height: 40px;
+   width: 42px;
+   display: grid;
+   place-items: center;
+   padding: 5px;
+   text-align: center;
+   background-color: rgb(231, 231, 231);
+   cursor: pointer;
+}
+.navbar .col3 .notifIconCont:hover{
+   opacity: 0.8;
+}
+.navbar .col3 .notifIconCont #notifIcon{
+   font-size: 24px;
+}
+.navbar .col3 .downIconCont{
+   height: 40px;
+   width: 42px;
+   display: grid;
+   place-items: center;
+   padding: 5px;
+   text-align: center;
+   background-color: rgb(231, 231, 231);
+   cursor: pointer;
+}
+.navbar .col3 .downIconCont:hover{
+   opacity: 0.8;
+}
+.navbar .col3 .downIconCont #downIcon{
+   font-size: 30px;
+}
+@media(max-width:1100px){
+.navbar .col1 input{
+    height: 40px;
+    width:40px;
+}
+.navbar .col2{
+  display: none;
+}
+}
+
+@media (min-height:1366px) and (max-width:1024px){
+  .navbar .col2{
+     padding-left: 11px;
+     padding-right: 11px;
+     display: flex;
+  }
+}
+
+@media (min-height:1024px) and (max-width:768px){
+  .navbar{
+     justify-content: space-evenly;
+  }
+  .navbar .col3{
+     align-items: flex-end;
+  }
+}
+
+@media(max-width:600px){
+  .navbar .col3 .profile{
+      display: none;
+   }
+}
+
+@media(max-width:400px){
+  .navbar .col1 div{
+     display: none;
+  }
+}
