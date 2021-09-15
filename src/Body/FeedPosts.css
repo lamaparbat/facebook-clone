@@ -35,6 +35,19 @@
 .posts .card .postFooter #divider{
   margin-top: 5px;
 }
+/* post footer reviews */
+.posts .card .postFooter #reviewNav{
+  border-bottom: 0.5px solid rgb(179, 179, 179);
+}
+.posts .card .postFooter .PostFooterReviews{
+  margin-top: 5px;
+}
+.posts .card .postFooter .PostFooterReviews div{
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
 .posts .card .postFooter .PostFooterReviews div{
    cursor:pointer;
    border-radius:5px;
@@ -61,6 +74,10 @@ background-color: whitesmoke;
   border: 0px solid white;
 }
 @media(max-width:600px){
+  .posts .card .postFooter .PostFooterReviews div{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
   .posts{
     margin-left: 0px;
     padding-left: 5px;

@@ -42,7 +42,7 @@ function FeedPosts() {
                      props.videoUrl != "" ? <video src={props.videoUrl} className="img-fluid" autoPlay controls muted></video> : null
                }
                <div className="postFooter px-3">
-                  <PostFooterReviews />
+                  <PostFooterReviews postID={props.uid} />
                   <PostFooterComments profile={props.profile} />
                </div>
             </div><br />
@@ -50,19 +50,28 @@ function FeedPosts() {
       )
    }
 
-   const PostFooterReviews = () => {
+   // like functions
+   const likePost = (uid) => {
+      alert(uid)
+   }
+
+   const PostFooterReviews = (uid) => {
       return (
          <>
-            <div className="PostFooterReviews mt-1 d-flex justify-content-around">
-               <div className="col1 d-flex px-2 py-1 mx-2 text-secondary">
+            <div className="py-2 px-1 d-flex justify-content-between" id="reviewNav">
+               <span style={{ fontSize: "14px" }}>1.3k</span>
+               <span style={{ fontSize: "14px" }}>30 comments</span>
+            </div>
+            <div className="PostFooterReviews d-flex justify-content-around">
+               <div className="col1 d-flex mx-2 text-secondary" onClick={() => likePost(uid.postID)}>
                   <ThumbUpAltOutlined />
                   <span> &nbsp;Like </span>
                </div>
-               <div className="col1 d-flex px-2 py-1 mx-2 text-secondary">
+               <div className="col1 d-flex mx-2 text-secondary">
                   <ChatBubbleOutline id="commentIcon" />
                   <span> &nbsp;Comment </span>
                </div>
-               <div className="col1 d-flex px-2 py-1 mx-2 text-secondary">
+               <div className="col1 d-flex mx-2 text-secondary">
                   <ReplyOutlined id="shareIcon" />
                   <span> &nbsp;Share </span>
                </div>
@@ -90,15 +99,15 @@ function FeedPosts() {
       <div className="posts py-2 my-3">
          {
             postData.map((data, index) => (
-                           <Post
-                              status={data.status}
-                              time={data.time}
-                              imgUrl={data.imgUrl}
-                              videoUrl={data.videoUrl}
-                              uid={data.uid}
-                              profile={data.profile}
-                              animate="animate__bounceIn"
-                              key={index} /> 
+               <Post
+                  status={data.status}
+                  time={data.time}
+                  imgUrl={data.imgUrl}
+                  videoUrl={data.videoUrl}
+                  uid={data.uid}
+                  profile={data.profile}
+                  animate="animate__bounceIn"
+                  key={index} />
             ))
          }
       </div>
